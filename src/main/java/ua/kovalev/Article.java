@@ -7,22 +7,39 @@ public class Article {
     private BigDecimal weight;
     private BigDecimal price;
 
+    public Article() {
+        super();
+    }
+
     public Article(BigDecimal price, BigDecimal weight, String description) {
+        super();
         this.price = price;
         this.weight = weight;
         this.description = description;
     }
 
-    public BigDecimal getPrice() {
-        return price;
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public BigDecimal getWeight() {
         return weight;
     }
 
-    public String getDescription() {
-        return description;
+    public void setWeight(BigDecimal weight) {
+        this.weight = weight;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
     }
 
     @Override
